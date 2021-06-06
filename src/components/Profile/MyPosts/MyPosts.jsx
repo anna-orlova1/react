@@ -19,14 +19,14 @@ const MyPosts = (props) => {
 
     return (
         <div className={s.postsBlock}>
-            <h3>My posts</h3>
-            <div>
+            <h3 className="pb-2 font-bold">My posts</h3>
+            <div className="pb-4">
                 <div>
                     <textarea onChange={ onPostChange } ref={newPostElement}
-                              value={props.newPostText} />
+                              value={props.newPostText} className="rounded-xl w-1/3 p-2 focus:outline-none" rows="5"/>
                 </div>
                 <div>
-                    <button onClick={ onAddPost }>Add post</button>
+                    <button className="transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 rounded p-2 font-serif bg-gray-200 hover:bg-purple-700" onClick={ onAddPost }>Add post</button>
                 </div>
             </div>
             <div className={s.posts}>
