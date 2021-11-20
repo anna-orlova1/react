@@ -8,7 +8,7 @@ import ProfileContainer from './components/Profile/ProfileContainer';
 import HeaderContainer from './components/Header/HeaderContainer';
 import LoginPage from './components/login/login';
 import { connect } from 'react-redux';
-import { getAuthUserData } from './redux/auth-reducer';
+import { getAuthUserData } from './redux/app-reducer';
 import { compose } from 'redux';
 
 class App extends Component {
