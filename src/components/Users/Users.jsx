@@ -9,7 +9,7 @@ let Users = ({ currentPage, onPageChanged, totalUsersCount, pageSize, users, ...
             currentPage={currentPage}
             onPageChanged={onPageChanged}
             pageSize={pageSize}
-            totalUsersCount={totalUsersCount}
+            totalItemsCount={totalUsersCount}
         />
         <div>
             {
