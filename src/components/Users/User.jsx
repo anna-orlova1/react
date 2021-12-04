@@ -3,8 +3,8 @@ import styles from "./users.module.css";
 import userPhoto from "../../assets/images/user.png";
 import NavLink from "react-router-dom/es/NavLink";
 
-let User = ({user, followingInProgress, unfollow, follow} ) => {
-     return(
+let User = ({ user, followingInProgress, unfollow, follow }) => {
+    return (
         <div>
             <span>
                 <div>
@@ -36,7 +36,7 @@ let User = ({user, followingInProgress, unfollow, follow} ) => {
                 </span>
             </span>
 
-        </div>) 
+        </div>)
 }
 
 export default User;

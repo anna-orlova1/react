@@ -9,12 +9,12 @@ import { getPageSize, getTotalUsersCount, getIsFetching, getFollowingInProgress,
 class UsersContainer extends React.Component {
 
     componentDidMount() {
-        let {currentPage, pageSize}=this.props;
-        this.props.getUsers(currentPage,  pageSize);
+        let { currentPage, pageSize } = this.props;
+        this.props.getUsers(currentPage, pageSize);
     }
 
     onPageChanged = (pageNumber) => {
-        let {pageSize}=this.props;
+        let { pageSize } = this.props;
         this.props.getUsers(pageNumber, pageSize);
     }
 
